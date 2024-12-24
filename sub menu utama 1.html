@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Utama</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .submenu {
+            display: none;
+        }
+
+        ul.submenu {
+            background-color: #555;
+            position: absolute;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.submenu li {
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        li:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Menu Utama</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li>
+                <a href="#">Kelola Barang</a>
+                <ul class="submenu">
+                    <li><a href="#">Tambah Barang</a></li>
+                    <li><a href="#">Edit Barang</a></li>
+                    <li><a href="#">Hapus Barang</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Kelola Penjualan</a>
+                <ul class="submenu">
+                    <li><a href="#">Tambah Penjualan</a></li>
+                    <li><a href="#">Laporan Penjualan</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Update Akun</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

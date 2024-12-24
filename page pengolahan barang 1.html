@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengolahan Barang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pengolahan Barang</h1>
+    
+    <div id="barang-list">
+        <!-- Daftar barang akan ditampilkan di sini -->
+    </div>
+    
+    <button id="tambah-barang">Tambah Barang</button>
+
+    <!-- Form untuk menambah dan mengedit barang -->
+    <div id="form-barang" class="hidden">
+        <h2 id="form-title">Tambah Barang</h2>
+        <form id="barang-form">
+            <input type="hidden" id="barang-id">
+            <label for="nama-barang">Nama Barang:</label>
+            <input type="text" id="nama-barang" required>
+            <label for="harga-barang">Harga Barang:</label>
+            <input type="number" id="harga-barang" required>
+            <button type="submit" id="simpan-barang">Simpan</button>
+            <button type="button" id="batal-barang">Batal</button>
+        </form>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Penjualan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        #container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            max-width: 100px;
+        }
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .product-button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .cart {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .cart-table th,
+        .cart-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .cart-total {
+            text-align: right;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Halaman Penjualan</h1>
+        <div class="product">
+            <div class="product-info">
+                <img src="produk1.jpg" alt="Produk 1">
+                <span>Nama Produk 1</span>
+                <span>Harga: $10.00</span>
+                <button class="product-button" onclick="addToCart(1)">Tambah</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-info">
+                <img src="produk2.jpg" alt="Produk 2">
+                <span>Nama Produk 2</span>
+                <span>Harga: $15.00</span>
+                <button class="product-button" onclick="addToCart(2)">Tambah</button>
+            </div>
+        </div>
+        <!-- Daftar produk lainnya -->
+
+        <div class="cart">
+            <h2>Keranjang</h2>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Nama Produk</th>
+                        <th>Harga</th>
+                        <th>Jumlah</th>
+                        <th>Total</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Item-item yang telah dipilih ditampilkan di sini -->
+                </tbody>
+            </table>
+            <div class="cart-total">
+                <strong>Total: $0.00</strong>
+            </div>
+        </div>
+    </div>
+    <script>
+        let cart = [];
+
+        function addToCart(productId) {
+            // Logika untuk menambah produk ke keranjang akan ditambahkan di sini
+        }
+
+        function removeFromCart(productId) {
+            // Logika untuk menghapus produk dari keranjang akan ditambahkan di sini
+        }
+
+        function updateCart() {
+            // Logika untuk memperbarui tampilan keranjang akan ditambahkan di sini
+        }
+    </script>
+</body>
+</html>
